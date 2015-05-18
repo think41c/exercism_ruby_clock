@@ -1,5 +1,5 @@
 class Clock
-  def self.at(x, y=0)
+  def self.at(hour, min=0)
     "11:09"
   end
 
