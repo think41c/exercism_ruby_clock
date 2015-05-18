@@ -1,10 +1,10 @@
 class Clock
   def self.at(hour, min=0)
-    "11:09"
+    hour = "#{hour}"
+    min  = "#{min}"
+    hour_formatted = hour.rjust(2,"0")
+    a = "#{hour_formatted}:#{min.rjust(2,"0")}"
+    a
   end
-
-  def to_s
-    "11:09"
-  end
-
 end
+p Clock.at(11).to_s
