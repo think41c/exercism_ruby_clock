@@ -1,5 +1,17 @@
 class Clock
+
+  def initialize(x)
+  end
+
+  def +(min)
+    puts "here?"
+    self.class.new(@time + sec * 60)
+  end
+  
   def self.at(hour, min=0)
+    puts hour
+    puts min
+    new(min)
     hour = "#{hour}"
     min  = "#{min}"
     hour_formatted = hour.rjust(2,"0")
@@ -7,4 +19,5 @@ class Clock
     a
   end
 end
-p Clock.at(11).to_s
+p Clock.at(11)
+
